@@ -1,0 +1,41 @@
+<div class="navbar">
+    <div class="logo">
+        <img src="./assets/logo.png" alt="Flipkart Logo">
+    </div>
+
+
+ <!-- Search Bar -->
+ <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="&#128269; Search for Products, Brands and More">
+   
+</div>
+
+    <ul class="nav-links">
+        <li class="dropdown">
+            <a href="#">&#128100; Login </a>
+            <ul class="dropdown-menu" id="dropdown">
+                <li><a href="#">New Customer? Signup</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">My Profile</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#">&#128230; Categories </a>
+            <ul class="dropdown-menu" id="dropdown">
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Fashion</a></li>
+                <li><a href="#">Home & Living</a></li>
+            </ul>
+        </li>
+        <li><a href="#">&#128722; Cart</a></li>
+    </ul>
+
+
+</div>
+
+<script>
+function toggleDropdown() {
+    let menu = document.getElementById("dropdown");
+    menu.style.display = menu.style.display === "block" ? "none" : "block";
+}
+</script>
